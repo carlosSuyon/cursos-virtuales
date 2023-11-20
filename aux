@@ -1,0 +1,45 @@
+	A TENER EN CUENTA AL  DESAROLLAR EL  SISTEMA
+	El Administrador de Formación Virtual de la Universidad será quien cargue los cursos en la plataforma,
+indicando para los mismos su nombre, número de disposición que avala el curso, descripción general de los
+objetivos, duración del curso (en semanas), descripción del contenido y la carga horaria semanal que el
+docente deberá dedicar al curso.
+Cada curso contará con un conjunto de actividades, de carácter obligatorio para los participantes, que se
+definen con un nombre, tema y descripción de la actividad requerida.
+Cada curso contará con un coordinador y tutores, responsables del seguimiento y evaluación de las
+actividades realizadas por los docentes inscriptos.
+
+el administrador no esta modelado en el diagrama de clases
+
+agregar historial de estado para la actividad participante 
+
+
+	 Cuando el participante se registra por primera
+vez a un curso en la plataforma virtual, se le asignará un usuario y contraseña, la cual deberá modificar en el
+primer ingreso a la plataforma. Esta contraseña será alfanumérica, entre 8 y 12 caracteres, no pudiendo ser
+una secuencia de letras o números.
+
+	
+	MAQUINAS DE ESTADOS 
+	
+	EstadoActividadd {publicada,con entregada,en correcion,corregida} 
+	
+	 no son estados pero  las notas podrán ser las mismas que para las actividades: aprobado, aprobado (distinguido) o no aprobado.
+	
+	PATRONES ARQUITECTONICOS
+	
+	
+	Los docentes interesados deberán solicitar la inscripción al curso, mediante un e-mail y la compleción de
+un formulario, dirigido a la Secretaría de Ciencia y Técnica de la Universidad, responsable de la aprobación
+de la solicitud de inscripción.
+
+Al finalizar la inscripción de los participantes, la plataforma enviará un mail en formato HTML con
+información del curso, link al sitio de la plataforma, y datos del usuario del participante. Si el participante se
+inscribió a otro curso con anterioridad, se le informará el usuario definido la primera vez y la contraseña
+registrada/modificada.
+
+
+
+	PATRONES DE DISEÑO 
+	
+	
+	
